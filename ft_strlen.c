@@ -10,9 +10,9 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-int main()
-{
-    char s[] = "Yakup";
+// int main()
+// {
+//     char s[] = "Yakup";
    
-    printf("%d", ft_strlen(s));
-}
+//     printf("%d", ft_strlen(s));
+// }

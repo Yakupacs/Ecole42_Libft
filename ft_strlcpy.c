@@ -19,10 +19,10 @@ size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
     return (srclen);
 }
 
-int main()
-{
-    char s1[] = "yakup";
-    char s2[] = "acis";
+// int main()
+// {
+//     char s1[] = "yakup";
+//     char s2[] = "acis";
 
-    printf("%d", ft_strlcpy(s1, s2, 3));
-}
+//     printf("%d", ft_strlcpy(s1, s2, 3));
+// }
