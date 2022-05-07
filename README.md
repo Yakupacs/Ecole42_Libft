@@ -1,4 +1,4 @@
-*I working "Libft" project with "42 İstanbul"*
+*I working Libft project with 42 Istanbul*
 
 ---------------------
 
