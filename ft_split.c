@@ -45,10 +45,20 @@ char **ft_split(char const *s, char c)
         dizi[i] = (char *)malloc(sizeof(char) * if_word_len(s, c) + 1);
         j = 0;
         while (*s != c && *s != '\0')
-            dizi[i][j] = *s++;
+            dizi[i][j++] = *s++;
         dizi[i][j] = '\0';
         i++;
     }
     dizi[i] = NULL;
     return (dizi);
+}
+
+int main()
+{
+    char s[] = "42 istanbula hos geldiniz.";
+    char c = ' ';
+    printf("%s\n", ft_split(s, c)[0]);
+    printf("%s\n", ft_split(s, c)[1]);
+    printf("%s\n", ft_split(s, c)[2]);
+    printf("%s", ft_split(s, c)[3]);
 }
