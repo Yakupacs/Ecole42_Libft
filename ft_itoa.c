@@ -4,26 +4,34 @@ char *ft_itoa(int n)
 {
     char    *str;
     int     temp;
-    int     i;
+    int     len;
 
-    i = 1;
+    len = 1;
     temp = n;
-    while (temp && i++)
+    while (temp && len++)
         temp /= 10;
-    str = (char *)malloc(sizeof(char) * ((n < 0) + i + (n == 0)));
+    str = (char *)malloc(sizeof(char) * ((n < 0) + len + (n == 0)));
     if (!str)
         return (NULL);
-    str += (n < 0) + i - 1 + (n == 0);
+    str += (n < 0) + len - 1 + (n == 0); 
     *str = '\0';
     if (n == 0)
         *(--str) = '0';
-    i = (n >= 0) * 2 - 1;
+    len = (n >= 0) * 2 - 1; 
     while (n)
     {
-        *(--str) = (n % (10 * i)) * i + '0';
+        *(--str) = (n % (10 * len)) * len + '0';
         n /= 10;
     }
-    if (i < 0)
+    if (len < 0)
         *(--str) = '-';
     return (str);
 }
+
+// int main(void)
+// {
+//     int n;
+
+//     n = -42;
+//     printf("%s",ft_itoa(n));
+// }
