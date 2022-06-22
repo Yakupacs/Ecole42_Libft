@@ -4,12 +4,12 @@ int ft_isprint(int c)
         return (1);
     return (0);
 }
+/*
+int main(void)
+{
+   char c;
 
-// #include <stdio.h>
-// int main(void)
-// {
-//     char c;
-
-//     c = '\n';
-//     printf("%d", ft_isprint(c));
-// }
+   c = '\n';
+    printf("%d", ft_isprint(c));
+}
+*/

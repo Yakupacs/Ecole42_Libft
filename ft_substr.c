@@ -15,6 +15,16 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	while (len--)
 		dizi[i++] = s[start++];
-	res[i] = '\0';
+	dizi[i] = '\0';
 	return (dizi);
 }
+/*
+int main()
+{
+	char const *s = "yakup";
+	char *dizi;
+
+	dizi = ft_substr(s, 1, 3);
+	printf("%s", dizi);
+}
+*/

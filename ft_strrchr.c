@@ -1,6 +1,6 @@
 #include "libft.h"
 
-char ft_strrchr(const char *str, int c)
+char *ft_strrchr(const char *str, int c)
 {
     size_t i;
 
@@ -11,7 +11,14 @@ char ft_strrchr(const char *str, int c)
             return ((char *)&str[i]);
         i--;
     }
-    if (s[0] == (char)c)
+    if (str[0] == (char)c)
         return ((char *)&str[0]);
     return (NULL);
 }
+/*
+int main()
+{
+	const char *str = "yakup";
+	printf("%s", ft_strrchr(str, 'k'));
+}
+*/

@@ -18,12 +18,11 @@ void    *ft_memcpy(void *dst, const void *src, size_t n)
     }
     return (dst);
 }
+/*
+int main()
+{
+    char s1[] = "Merhaba";
+	size_t a = 3;
 
-// #include <stdio.h>
-// int main()
-// {
-//     char s1[] = "Merhaba";
-//     char s2[] = "Dunya";
-
-//     printf("%s", ft_memcpy(s1,s2,4));
-// }
+    printf("%s", ft_memcpy(s1+2,s1,a));
+}*/

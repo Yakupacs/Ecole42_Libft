@@ -11,3 +11,11 @@ char *ft_strdup(const char *str1)
         return (0);
     return (ft_memcpy(str2, str1, len));
 }
+/*
+int main(void)
+{
+    char   str[] = "yakup";
+
+    printf("%s", ft_strdup(str));
+}
+*/

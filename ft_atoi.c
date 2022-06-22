@@ -17,7 +17,7 @@ int	ft_atoi(const char *str)
 			sign = -1;
 		i++;
 	}
-	while (ft_isdigit(str[i]))
+	while (str[i] <= '9' && str[i] >= '0')
 	{
 		number = (number * 10) + (str[i] - 48) * sign;
 		if (number > 2147483647)
@@ -28,3 +28,12 @@ int	ft_atoi(const char *str)
 	}
 	return (number);
 }
+/*  
+int	main()
+{
+	char	*str = "     -343253";
+	int		k;
+	k = ft_atoi(str);
+	printf("%d", k);
+}
+*/

@@ -2,14 +2,14 @@
 
 char *ft_itoa(int n)
 {
-    char    *str;
-    int     temp;
-    int     len;
+    char	*str;
+    int		temp;
+    int		len;
 
     len = 1;
     temp = n;
     while (temp && len++)
-        temp /= 10;
+    	temp /= 10;
     str = (char *)malloc(sizeof(char) * ((n < 0) + len + (n == 0)));
     if (!str)
         return (NULL);
@@ -27,11 +27,12 @@ char *ft_itoa(int n)
         *(--str) = '-';
     return (str);
 }
+/*
+int main(void)
+{
+     int n;
 
-// int main(void)
-// {
-//     int n;
-
-//     n = -42;
-//     printf("%s",ft_itoa(n));
-// }
+     n = -42;
+     printf("%s",ft_itoa(n));
+}
+*/

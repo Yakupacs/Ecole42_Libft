@@ -2,7 +2,7 @@
 
 int ft_strncmp(const char *str1, const char *str2, size_t n)
 {
-    int i;
+    size_t i;
 
     i = 0;
     if (n == 0)
@@ -11,3 +11,12 @@ int ft_strncmp(const char *str1, const char *str2, size_t n)
         i++;
     return (((unsigned char)str1[i] - (unsigned char)str2[i]));
 }
+/*
+int main()
+{
+    char str1[] = "yakup";
+    char str2[] = "yakupp";
+
+    printf("%d", ft_strncmp(str1, str2, 6));
+}
+*/

@@ -39,13 +39,14 @@ char *ft_strtrim(char const *s1, char const *set)
     dizi[j] = '\0';
     return (dizi);    
 }
+/*
+int main(void)
+{
+    char str[] = "42istanbul";
+    char set[] = "bul";
+    char *a;
 
-// int main(void)
-// {
-//     char str[] = "42istanbul";
-//     char set[] = "ul";
-//     char *a;
-
-//     a = ft_strtrim(str, set);
-//     printf("%s", a);
-// }
+    a = ft_strtrim(str, set);
+    printf("%s", a);
+}
+*/

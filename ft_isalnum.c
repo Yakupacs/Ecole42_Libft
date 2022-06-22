@@ -6,3 +6,10 @@ int ft_isalnum(int c)
         return (1);
     return (0);
 }
+/*
+int main(void)
+{
+    printf("%d", ft_isalnum(3));
+    printf("%d", ft_isalnum('a'));
+}
+*/

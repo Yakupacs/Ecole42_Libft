@@ -18,10 +18,15 @@ size_t  ft_strlcat(char *dest, const char *src, size_t size)
         dest[dlen] = '\0';
     return (i + ft_strlen(src));
 }
+/*
+int main()
+{
+    char s1[] = "yakup";
+    const char s2[] = "acis";
 
-// int main()
-// {
-//     char s1[] = "yakup";
-//     const char s2[] = "acis";
-//     printf("%zu", ft_strlcat(s1, s2, 5));
-// }
+	printf("%s\n", s1);
+	ft_strlcat(s1, s2, 7);
+	printf("%s\n", s1);
+    printf("%zu\n", ft_strlcat(s1, s2, 7));
+}
+*/

@@ -52,7 +52,7 @@ char **ft_split(char const *s, char c)
     dizi[i] = NULL;
     return (dizi);
 }
-
+/*
 int main()
 {
     char s[] = "42 istanbula hos geldiniz.";
@@ -62,3 +62,4 @@ int main()
     printf("%s\n", ft_split(s, c)[2]);
     printf("%s", ft_split(s, c)[3]);
 }
+*/

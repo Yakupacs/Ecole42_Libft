@@ -4,12 +4,9 @@ int ft_isdigit(int c)
         return (1);
     return (0);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-//     char a;
-    
-//     a = '2';
-//     printf("%d", ft_isdigit(a));
-// }
+/*
+int main(void)
+{
+    printf("%d", ft_isdigit('2'));
+}
+*/

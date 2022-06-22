@@ -21,15 +21,16 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     str[i] = '\0';
     return (str);
 }
+/*
+char    lower(unsigned int a, char s)
+{
+    if (s >= 65 && s <= 90)
+        return (s + 32);
+    return s;
+}
 
-// char    lower(unsigned int a, char s)
-// {
-//     if (s >= 65 && s <= 90)
-//         return (s + 32);
-//     return s;
-// }
-
-// int main()
-// {
-//     printf("%s", ft_strmapi("YaKuP", lower));
-// }
+int main()
+{
+    printf("%s", ft_strmapi("YaKuP", lower));
+}
+*/

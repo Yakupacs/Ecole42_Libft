@@ -20,12 +20,13 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
     }
     return (NULL);
 }
-
-// int main()
-// {
-//     const char *str;
-//     const char *str1;
-//     str = "42 istanbula hos geldiniz";
-//     str1 = "hos";
-//     printf("%s", ft_strnstr(str, str1, 16));
-// }
+/*
+int main()
+{
+    const char *str;
+    const char *str1;
+    str = "42 istanbula hos geldiniz";
+    str1 = "hos";
+    printf("%s", ft_strnstr(str, str1, 16));
+}
+*/
