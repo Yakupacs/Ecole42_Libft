@@ -31,11 +31,11 @@ bonus:
 		ar rc $(NAME) $(BONUS_OBJS)
 
 clean:
-		rm -f $(OBJS)
-		rm -f $(BONUS_OBJS)
+		$(RM) $(OBJS)
+		$(RM) $(BONUS_OBJS)
 
 fclean: clean
-		rm -f $(NAME)
+		$(RM) $(NAME)
 
 restart: fclean all
 
