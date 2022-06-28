@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yacis <yacis@student.42istanbul.com.tr>    +#+  +:+       +#+        */
+/*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:24:25 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/23 00:24:26 by yacis            ###   ########.fr       */
+/*   Updated: 2022/06/27 19:45:46 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
-{
-	unsigned char	*dstt;
-	unsigned char	*srcc;
-	size_t	i;
+{	
+	size_t				i;
+	unsigned char		*dstt;
+	unsigned char		*srcc;
 
 	dstt = (unsigned char *)dst;
 	srcc = (unsigned char *)src;
@@ -36,7 +36,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 int	main(void)
 {
     char s1[] = "Merhaba";
-	char s2[] = "Merhab";
 	size_t a = 3;
 
     printf("%s", ft_memmove(s1+2,s1,a));

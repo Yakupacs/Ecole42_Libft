@@ -3,33 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yacis <yacis@student.42istanbul.com.tr>    +#+  +:+       +#+        */
+/*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:23:18 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/23 00:23:22 by yacis            ###   ########.fr       */
+/*   Updated: 2022/06/28 15:58:39 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-        unsigned int    i;
-        char        *str;
+	char			*str;
+	size_t			i;
 
-        str = (char *)s;
-        i = 0;
-        while (i < n)
-        {
-            str[i] = 0;
-            i++;
-        }
+	str = (char *)s;
+	i = 0;
+	while (i < n)
+	{
+		str[i] = 0;
+		i++;
+	}
 }
-/*
-int main()
+/*int main()
 {
     int i;
-    unsigned int mark1[5] = {4294967295, 4294967295, 4294967295, 4294967295, 4294967295};
+    unsigned int mark1[5] = {4294967295, 4294967295, 
+	4294967295, 4294967295, 4294967295};
     unsigned char mark2[6] = "yakup";
     unsigned char *ch = mark2 + 4;   
 

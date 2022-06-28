@@ -14,29 +14,28 @@ BONUS	=	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
 				ft_lstdelone.c ft_lstclear.c \
 				ft_lstiter.c ft_lstmap.c
 
-BONUS_OBJS	= $(BONUS_OBJS:.c=.o)
+BONUS_OBJS	= $(BONUS:.c=.o)
 
 CC	=	gcc
 RM	=	rm -f
 FLAGS	= -Wall -Wextra -Werror
 
-$(NAME):
-		$(CC) $(FLAGS) -c $(SRCS) -I ./  
+$(NAME): 
+		$(CC) $(FLAGS) -c $(SRCS) 
 		ar rc $(NAME) $(OBJS)
 
 all: $(NAME)
 
 bonus:
-		$(CC) $(FLAGS) -c $(BONUS) -I ./
+		$(CC) $(FLAGS) -c $(BONUS)
 		ar rc $(NAME) $(BONUS_OBJS)
 
 clean:
 		$(RM) $(OBJS)
-		$(RM) $(BONUS_OBJS)
 
 fclean: clean
 		$(RM) $(NAME)
 
-restart: fclean all
+re: fclean all
 
-.PHONY:	all clean fclean restart bonus
+.PHONY: all clean fclean re bonus
