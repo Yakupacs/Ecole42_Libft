@@ -6,20 +6,22 @@
 /*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:23:24 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/28 18:29:46 by yacis@stude      ###   ########.fr       */
+/*   Updated: 2022/06/29 17:05:30 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t num, size_t size)
+void	*ft_calloc(size_t nbayt, size_t size)
 {
 	void	*str;
 
-	str = malloc(size * num);
+	if (nbayt == SIZE_MAX || size == SIZE_MAX)
+		return (NULL);
+	str = malloc(size * nbayt);
 	if (!str)
 		return (str);
-	return (ft_memset(str, 0, size * num));
+	return (ft_memset(str, 0, size * nbayt));
 }
 /*
 int	main(void)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yacis <yacis@student.42istanbul.com.tr>    +#+  +:+       +#+        */
+/*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:24:51 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/23 00:24:53 by yacis            ###   ########.fr       */
+/*   Updated: 2022/06/29 13:41:21 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,6 @@ int main()
 	printf("%s\n", s1);
 	ft_strlcpy(s1, s2, 3);
 	printf("%s\n", s1);
-    printf("%zu\n", ft_strlcpy(s1, s2, 2));
+    printf("%zu\n", ft_strlcpy(s1, s2, 3));
 }
 */

@@ -6,13 +6,13 @@
 /*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:24:37 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/28 18:53:33 by yacis@stude      ###   ########.fr       */
+/*   Updated: 2022/06/29 19:47:19 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	if_word_len(char const *s, char c)
+static size_t	if_word_len(char const *s, char c)
 {
 	size_t	len;
 
@@ -64,14 +64,16 @@ char	**ft_split(char const *s, char c)
 	dizi[i] = NULL;
 	return (dizi);
 }
-/*
-int main()
+
+/* int main()
 {
-    char s[] = "42     istanbula hos geldiniz.";
+    char s[] = "42     istanbula     h o s    geldiniz.";
     char c = ' ';
     printf("%s\n", ft_split(s, c)[0]);
     printf("%s\n", ft_split(s, c)[1]);
     printf("%s\n", ft_split(s, c)[2]);
-    printf("%s", ft_split(s, c)[3]);
+    printf("%s\n", ft_split(s, c)[3]);
+	printf("%s\n", ft_split(s, c)[4]);
+	printf("%s\n", ft_split(s, c)[5]);
 }
-*/
+ */

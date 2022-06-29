@@ -31,7 +31,8 @@ bonus:
 		ar rc $(NAME) $(BONUS_OBJS)
 
 clean:
-		$(RM) $(OBJS)
+		$(RM) $(OBJS) 
+		$(RM) $(BONUS_OBJS)
 
 fclean: clean
 		$(RM) $(NAME)

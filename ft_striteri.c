@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yacis <yacis@student.42istanbul.com.tr>    +#+  +:+       +#+        */
+/*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:24:45 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/23 00:24:46 by yacis            ###   ########.fr       */
+/*   Updated: 2022/06/29 21:59:25 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,15 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		return ;
 	while (s[i] != '\0')
 	{
-		(*f)(i, s + i);
+		(*f)(i, &s[i]);
 		i++;
 	}
 }
-/*
+/* 
 void lower(unsigned int i, char *s)
 {
-    if (s[i] >= 65 && s[i] <= 90)
-        s[i] = s[i] + 32;
-
+	if (s[0] >= 65 && s[0] <= 90)
+        s[0] = s[0] + 32;
 }
 
 int main()
@@ -40,4 +39,4 @@ int main()
     ft_striteri(str, lower);
     printf("%s", str);
 }
-*/
+ */

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yacis <yacis@student.42istanbul.com.tr>    +#+  +:+       +#+        */
+/*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:25:04 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/23 00:25:06 by yacis            ###   ########.fr       */
+/*   Updated: 2022/06/29 18:36:47 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_control(char const *str, char c)
+static	int	ft_control(char const *str, char c)
 {
 	int	i;
 
@@ -35,7 +35,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = 0;
 	j = 0;
-	len = 0;
 	if (s1 == 0 || set == 0)
 		return (NULL);
 	len = ft_strlen(s1);
@@ -43,7 +42,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i++;
 	while (len > i && ft_control(set, s1[len - 1]))
 		len--;
-	dizi = (char *)malloc(sizeof(char) * (len - i + 1));
+	dizi = malloc(sizeof(char) * (len - i + 1));
 	if (!dizi)
 		return (NULL);
 	while (i < len)
@@ -51,14 +50,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	dizi[j] = '\0';
 	return (dizi);
 }
-/*
+/* 
 int main(void)
 {
-    char str[] = "42istanbul";
-    char set[] = "bul";
+    char str[] = "-------congrulations-------";
+    char set[] = "-";
     char *a;
 
     a = ft_strtrim(str, set);
     printf("%s", a);
 }
-*/
+ */

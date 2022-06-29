@@ -6,7 +6,7 @@
 /*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:23:54 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/28 19:19:22 by yacis@stude      ###   ########.fr       */
+/*   Updated: 2022/06/29 19:47:12 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*ft_itoa(int n)
 		*(--str) = '-';
 	return (str);
 }
-/*
+/* 
 int main(void)
 {
      int n;
@@ -47,4 +47,4 @@ int main(void)
      n = -42;
      printf("%s",ft_itoa(n));
 }
-*/
+ */

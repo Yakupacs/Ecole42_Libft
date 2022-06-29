@@ -6,7 +6,7 @@
 /*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:23:18 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/28 15:58:39 by yacis@stude      ###   ########.fr       */
+/*   Updated: 2022/06/29 20:09:14 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-/*int main()
+/*
+int main()
 {
     int i;
     unsigned int mark1[5] = {4294967295, 4294967295, 

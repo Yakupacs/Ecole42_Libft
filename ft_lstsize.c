@@ -6,7 +6,7 @@
 /*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:24:17 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/28 15:13:07 by yacis@stude      ###   ########.fr       */
+/*   Updated: 2022/06/29 22:29:20 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
-/*
+/* 
 int	main()
 {
 	t_list	*lst;
@@ -35,7 +35,7 @@ int	main()
 	lst2 = ft_lstnew("Ata");
 	lst3 = ft_lstnew("Bindi");
 	lst->next = lst2;
-	lst2->next = lst3;
-	printf("%d", ft_lstsize(lst2));
+	lst->next->next = lst3;
+	printf("%d", ft_lstsize(lst));
 }
-*/
+ */

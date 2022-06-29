@@ -6,7 +6,7 @@
 /*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:24:15 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/27 20:20:33 by yacis@stude      ###   ########.fr       */
+/*   Updated: 2022/06/29 19:25:02 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,25 +16,27 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*str;
 
-	str = (t_list *)malloc(sizeof(t_list));
+	str = malloc(sizeof(t_list));
 	if (!str)
 		return (NULL);
 	str->content = content;
 	str->next = NULL;
 	return (str);
 }
-
-/*
+/* 
 int main()
 {
 	t_list	*list;
-	int	tab[2] = {13, 21};
-	int	*tab2;
+	t_list	*list2;
+	char	tab[6] = "yakup";
+	char	tab2[5] = "acis";
 
 	list = ft_lstnew(tab);
-	tab2 = list->content;
-	printf("%d\n", *(tab2));
-	printf("%d\n", *(tab2 + 1));
-	printf("%p", list->next);
+	list2 = ft_lstnew(tab2);
+	list->next = list2;
+	printf("%s\n", list->content);
+	printf("%p\n", list->next);
+	printf("%s\n", list2->content);
+	printf("%p\n", list2->next);
 }
-*/
+ */

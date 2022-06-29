@@ -6,7 +6,7 @@
 /*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:24:56 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/28 19:29:23 by yacis@stude      ###   ########.fr       */
+/*   Updated: 2022/06/29 17:21:23 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-/*
+/* 
 char    lower(unsigned int a, char s)
 {
     if (s >= 65 && s <= 90)
@@ -45,4 +45,4 @@ int main()
 {
     printf("%s", ft_strmapi("YaKuP", lower));
 }
-*/
+ */

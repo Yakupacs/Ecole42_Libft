@@ -6,7 +6,7 @@
 /*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:25:06 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/23 20:29:31 by yacis@stude      ###   ########.fr       */
+/*   Updated: 2022/06/29 18:47:16 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	dizi[i] = '\0';
 	return (dizi);
 }
-/*
+/* 
 int main()
 {
 	char const *s = "yakup";
@@ -41,4 +41,4 @@ int main()
 	dizi = ft_substr(s, 0, 2);
 	printf("%s", dizi);
 }
-*/
+ */
