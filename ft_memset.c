@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yacis <yacis@student.42istanbul.com.tr>    +#+  +:+       +#+        */
+/*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:24:27 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/23 00:24:29 by yacis            ###   ########.fr       */
+/*   Updated: 2022/07/01 16:05:25 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memset(void *b, int c, size_t len)
 		str[i] = c;
 		i++;
 	}
-	return (b);
+	return ((void *)str);
 }
 /*
 int main()

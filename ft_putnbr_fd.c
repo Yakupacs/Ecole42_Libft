@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yacis <yacis@student.42istanbul.com.tr>    +#+  +:+       +#+        */
+/*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:24:34 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/23 00:24:35 by yacis            ###   ########.fr       */
+/*   Updated: 2022/06/30 18:12:21 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,12 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(n % 10 + '0', fd);
 	}
 }
-/*
+/* 
+#include	<fcntl.h>
 int	main()
 {
-	ft_putnbr_fd(4242, 1);
+	int fd1 = open("test.txt", O_WRONLY);
+	ft_putnbr_fd(3123, fd1);
+	close(fd1);
 }
-*/
+ */

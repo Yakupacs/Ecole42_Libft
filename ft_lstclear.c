@@ -6,7 +6,7 @@
 /*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:24:05 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/29 22:14:25 by yacis@stude      ###   ########.fr       */
+/*   Updated: 2022/06/30 17:50:33 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		del((*lst)->content);
 		tmp = *lst;
 		*lst = tmp->next;
-		printf("%s\n", tmp->content);
 		free(tmp);
 	}
 }

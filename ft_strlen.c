@@ -6,7 +6,7 @@
 /*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:24:53 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/29 15:40:46 by yacis@stude      ###   ########.fr       */
+/*   Updated: 2022/06/30 17:34:40 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	while (s[i] && s)
+	while (s[i])
 		i++;
 	return (i);
 }

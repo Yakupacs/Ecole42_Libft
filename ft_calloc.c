@@ -6,7 +6,7 @@
 /*   By: yacis@student.42istanbul.com.tr <yacis>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 00:23:24 by yacis             #+#    #+#             */
-/*   Updated: 2022/06/29 17:05:30 by yacis@stude      ###   ########.fr       */
+/*   Updated: 2022/06/30 17:33:38 by yacis@stude      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	*ft_calloc(size_t nbayt, size_t size)
 {
 	void	*str;
 
-	if (nbayt == SIZE_MAX || size == SIZE_MAX)
-		return (NULL);
 	str = malloc(size * nbayt);
 	if (!str)
 		return (str);
