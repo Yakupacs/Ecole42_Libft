@@ -1,4 +1,4 @@
-*I working Libft project with 42 Istanbul*
+*I am working on Libft project at 42 Istanbul*
 
 ---------------------
 
