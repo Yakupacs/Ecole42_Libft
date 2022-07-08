@@ -1,6 +1,27 @@
-*I am working on Libft project at 42 Istanbul*
+<p align="center">
+     LIBFT
+</p>
 
----------------------
+-----------
+
+#### DESCRIPTION
+###### This project is your very first project as a student at 42. You will need to recode a few functions of the C standard library as well as some other utility functions that you will use during your whole cursus.
+
+-----------
+
+| Skills |
+| :--- |
+| Imperative programming |
+| Rigor |
+| Algorithms & AI |
+
+-------------
+
+| Keywords |
+| :--- |
+| Unix Logic |
+
+<br>
 
 
  *☕️ Now you can buy me a coffee!*
